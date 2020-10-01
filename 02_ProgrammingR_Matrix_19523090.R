@@ -36,8 +36,8 @@ J
 det(G)
 det(H)
 det(J)
-#membuat matriks K yang merupakan gabungan dari 5 row dari masing-masing matriks G dan J
-K <- rbind(G[(1:5), ],J[(1:5), ])
+#membuat matriks K yang merupakan gabungan dari 5 kolom dari masing-masing matriks G dan J
+K <- cbind(G[,(1:5)],J[,(1:5)])
 K
 #Hitung hasil dari operasi perkalian matriks G dengan invers G!!
 hasil <- G %*% solve(G)
